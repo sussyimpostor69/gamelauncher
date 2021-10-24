@@ -1,0 +1,31 @@
+﻿<Window x:Name="LauncherWindow" x:Class="GameLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLauncher"
+        mc:Ignorable="d"
+        Title="IS ALONE LAUNCHER" Height="491" Icon="/Screenshot 2021-10-03 141640.png" Width="902">
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\IMAN\OneDrive\Pictures\cool-blue-backgrounds-hd-elegant-69-4k-blue-wallpaper-backgrounds-that-will-give-your-desktop-perfect-readability-of-the-day-left-of-the-hudson.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="405*"/>
+            <RowDefinition Height="29*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="44*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="522*"/>
+            <ColumnDefinition Width="201*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="GameTitle" Content="IS ALONE" Margin="0,14,503,347" FontWeight="Bold" FontSize="30" Foreground="White" FontFamily="Segoe UI Black" HorizontalAlignment="Right" Width="176" Grid.ColumnSpan="4"/>
+        <Label x:Name="Version" Content="1.0 ALPHA" Grid.Column="3" Margin="0,0,377,369" FontSize="15" FontFamily="Yu Gothic UI Semibold" Foreground="#FFFFAE00" RenderTransformOrigin="0.476,0.537" Background="{x:Null}" HorizontalAlignment="Right" Width="135" Height="36" VerticalAlignment="Bottom"/>
+        <WebBrowser x:Name="webbrowser" Margin="10,0,10,32" Grid.ColumnSpan="5" Height="332" VerticalAlignment="Bottom" IsHitTestVisible="False" Source="https://site.tiiny.site"/>
+        <Button x:Name="LAUNCH_game" Content="PLAY" Grid.Column="4" Margin="61,411,0,0" FontFamily="Segoe UI Variable Small Light" Background="#FF19CB3A" BorderBrush="{x:Null}" Foreground="White" FontSize="14" Width="130" Height="30" Grid.RowSpan="2" Click="LAUNCH_game_Click" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="LAUNCH_website" Content="Our Social's" Margin="0,411,39,0" FontFamily="Segoe UI Variable Small Light" Background="#FFA5C5DA" BorderBrush="{x:Null}" Foreground="#FF204F70" FontSize="14" Grid.ColumnSpan="3" Grid.RowSpan="2" Height="30" Width="130" Click="LAUNCH_website_Click" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

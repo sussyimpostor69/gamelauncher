@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cool-blue-backgrounds-hd-elegant-69-4k-blue-wallpaper-backgrounds-that-will-give-your-desktop-perfect-readability-of-the-day-left-of-the-hudson.jpg" />
+    <None Remove="Screenshot 2021-10-03 141640.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cool-blue-backgrounds-hd-elegant-69-4k-blue-wallpaper-backgrounds-that-will-give-your-desktop-perfect-readability-of-the-day-left-of-the-hudson.jpg" />
+    <Resource Include="Screenshot 2021-10-03 141640.png" />
+  </ItemGroup>
+
+</Project>
